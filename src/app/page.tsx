@@ -204,7 +204,7 @@ export default function Home() {
                           </h2>
                         )}
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div className={`grid grid-cols-1 md:grid-cols-2 gap-6 ${isSidebarOpen ? 'lg:grid-cols-2 lg:[@media(min-aspect-ratio:16/9)]:grid-cols-3' : 'lg:grid-cols-3 lg:[@media(min-aspect-ratio:16/9)]:grid-cols-4'}`}>
                           {groupItems.map((node) => (
                             <PromptNodeCard
                               key={node.id}
