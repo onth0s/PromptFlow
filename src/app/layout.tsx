@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "PromptFlow",
   description: "Minimalist Multimodal Prompt Versioning Spec",
+  icons: {
+    icon: "/PromptFlow.svg",
+  },
 };
 
 export default function RootLayout({
